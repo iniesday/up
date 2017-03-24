@@ -1,0 +1,878 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Load Test Results</title>
+<style type="text/css">
+				body {
+					font:normal 68% verdana,arial,helvetica;
+					color:#000000;
+				}
+				table tr td, table tr th {
+					font-size: 68%;
+				}
+				table.details tr th{
+				    color: #ffffff;
+					font-weight: bold;
+					text-align:center;
+					background:#2674a6;
+					white-space: nowrap;
+				}
+				table.details tr td{
+					background:#eeeee0;
+					white-space: nowrap;
+				}
+				h1 {
+					margin: 0px 0px 5px; font: 165% verdana,arial,helvetica
+				}
+				h2 {
+					margin-top: 1em; margin-bottom: 0.5em; font: bold 125% verdana,arial,helvetica
+				}
+				h3 {
+					margin-bottom: 0.5em; font: bold 115% verdana,arial,helvetica
+				}
+				.Failure {
+					font-weight:bold; color:red;
+				}
+				
+	
+				img
+				{
+				  border-width: 0px;
+				}
+				
+				.expand_link
+				{
+				   position=absolute;
+				   right: 0px;
+				   width: 27px;
+				   top: 1px;
+				   height: 27px;
+				}
+				
+				.page_details
+				{
+				   display: none;
+				}
+                                
+                                .page_details_expanded
+                                {
+                                    display: block;
+                                    display/* hide this definition from  IE5/6 */: table-row;
+                                }
+
+
+			</style>
+<script language="JavaScript">
+                           function expand(details_id)
+			   {
+			      
+			      document.getElementById(details_id).className = "page_details_expanded";
+			   }
+			   
+			   function collapse(details_id)
+			   {
+			      
+			      document.getElementById(details_id).className = "page_details";
+			   }
+			   
+			   function change(details_id)
+			   {
+			      if(document.getElementById(details_id+"_image").src.match("expand"))
+			      {
+			         document.getElementById(details_id+"_image").src = "collapse.png";
+			         expand(details_id);
+			      }
+			      else
+			      {
+			         document.getElementById(details_id+"_image").src = "expand.png";
+			         collapse(details_id);
+			      } 
+                           }
+			</script>
+</head>
+<body>
+<h1>Load Test Results</h1>
+<table width="100%">
+<tr>
+<td align="left">Date report: date not defined</td><td align="right">Designed for use with <a href="http://jmeter.apache.org/">JMeter</a> and <a href="http://ant.apache.org">Ant</a>.</td>
+</tr>
+</table>
+<hr size="1">
+<h2>Summary</h2>
+<table align="center" class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th># Samples</th><th>Failures</th><th>Success Rate</th><th>Average Time</th><th>Min Time</th><th>Max Time</th>
+</tr>
+<tr valign="top" class="Failure">
+<td align="center">69</td><td align="center">18</td><td align="center">73.91%</td><td align="center">54 ms</td><td align="center">NaN</td><td align="center">NaN</td>
+</tr>
+</table>
+<hr size="1" width="95%" align="center">
+<h2>Pages</h2>
+<table align="center" class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th>URL</th><th># Samples</th><th>Failures</th><th>Success Rate</th><th>Average Time</th><th>Min Time</th><th>Max Time</th><th></th>
+</tr>
+<tr valign="top" class="">
+<td>给用户发放0.2%加息率</td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">65 ms</td><td align="right">NaN</td><td align="right">NaN</td><td align="center"><a href="javascript:change('page_details_1')"><img src="expand.png" alt="expand/collapse" id="page_details_1_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_1">
+<td colspan="8" bgcolor="#FF0000">
+<div align="center">
+<b>Details for Page "给用户发放0.2%加息率"</b>
+<table bordercolor="#000000" bgcolor="#2674A6" border="0" cellpadding="1" cellspacing="1" width="95%">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>开启第一轮加息 1-1</td><td align="center">1</td><td align="right">82</td><td align="right">410</td><td align="center">true</td>
+</tr>
+<tr>
+<td>开启第二轮加息 2-1</td><td align="center">2</td><td align="right">48</td><td align="right">410</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td>验证getList表增加数据</td><td align="center">1</td><td align="center">0</td><td align="right">100.00%</td><td align="right">72 ms</td><td align="right">NaN</td><td align="right">NaN</td><td align="center"><a href="javascript:change('page_details_2')"><img src="expand.png" alt="expand/collapse" id="page_details_2_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_2">
+<td colspan="8" bgcolor="#FF0000">
+<div align="center">
+<b>Details for Page "验证getList表增加数据"</b>
+<table bordercolor="#000000" bgcolor="#2674A6" border="0" cellpadding="1" cellspacing="1" width="95%">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>开启第一轮加息 1-1</td><td align="center">1</td><td align="right">72</td><td align="right">412</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a href="#%E7%94%A8%E6%88%B7%E6%AD%A3%E5%B8%B8%E5%BC%80%E5%90%AF%E5%8A%A0%E6%81%AF">用户正常开启加息</a></td><td align="center">7</td><td align="center">6</td><td align="right">14.29%</td><td align="right">42 ms</td><td align="right">NaN</td><td align="right">NaN</td><td align="center"><a href="javascript:change('page_details_3')"><img src="expand.png" alt="expand/collapse" id="page_details_3_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_3">
+<td colspan="8" bgcolor="#FF0000">
+<div align="center">
+<b>Details for Page "用户正常开启加息"</b>
+<table bordercolor="#000000" bgcolor="#2674A6" border="0" cellpadding="1" cellspacing="1" width="95%">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>开启第一轮加息 1-1</td><td align="center">1</td><td align="right">28</td><td align="right">295</td><td align="center">false</td>
+</tr>
+<tr>
+<td>开启第二轮加息 2-1</td><td align="center">2</td><td align="right">45</td><td align="right">295</td><td align="center">true</td>
+</tr>
+<tr>
+<td>老版收益不足1分钱开启加息 4-1</td><td align="center">3</td><td align="right">51</td><td align="right">295</td><td align="center">false</td>
+</tr>
+<tr>
+<td>用户有正在进行的加息,开启加息 6-1</td><td align="center">4</td><td align="right">61</td><td align="right">295</td><td align="center">false</td>
+</tr>
+<tr>
+<td>用户获得两笔活动加息,开启加息 7-1</td><td align="center">5</td><td align="right">58</td><td align="right">295</td><td align="center">false</td>
+</tr>
+<tr>
+<td>用户已过期加息,用户开启加息 8-1</td><td align="center">6</td><td align="right">30</td><td align="right">295</td><td align="center">false</td>
+</tr>
+<tr>
+<td>用户有部分加息过期,开启加息 9-1</td><td align="center">7</td><td align="right">22</td><td align="right">295</td><td align="center">false</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td>Test Pause</td><td align="center">5</td><td align="center">0</td><td align="right">100.00%</td><td align="right">14 ms</td><td align="right">NaN</td><td align="right">NaN</td><td align="center"><a href="javascript:change('page_details_4')"><img src="expand.png" alt="expand/collapse" id="page_details_4_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_4">
+<td colspan="8" bgcolor="#FF0000">
+<div align="center">
+<b>Details for Page "Test Pause"</b>
+<table bordercolor="#000000" bgcolor="#2674A6" border="0" cellpadding="1" cellspacing="1" width="95%">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>开启第一轮加息 1-1</td><td align="center">1</td><td align="right">2</td><td align="right">72</td><td align="center">true</td>
+</tr>
+<tr>
+<td>开启第二轮加息 2-1</td><td align="center">2</td><td align="right">3</td><td align="right">72</td><td align="center">true</td>
+</tr>
+<tr>
+<td>老版收益不足1分钱开启加息 4-1</td><td align="center">3</td><td align="right">1</td><td align="right">72</td><td align="center">true</td>
+</tr>
+<tr>
+<td>用户有正在进行的加息,开启加息 6-1</td><td align="center">4</td><td align="right">64</td><td align="right">3</td><td align="center">true</td>
+</tr>
+<tr>
+<td>用户获得两笔活动加息,开启加息 7-1</td><td align="center">5</td><td align="right">1</td><td align="right">72</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a href="#%E9%AA%8C%E8%AF%81currentStatus%E8%A1%A8%E6%95%B0%E6%8D%AE%E7%8A%B6%E6%80%81%E6%94%B9%E5%8F%98">验证currentStatus表数据状态改变</a></td><td align="center">1</td><td align="center">1</td><td align="right">0.00%</td><td align="right">85 ms</td><td align="right">NaN</td><td align="right">NaN</td><td align="center"><a href="javascript:change('page_details_5')"><img src="expand.png" alt="expand/collapse" id="page_details_5_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_5">
+<td colspan="8" bgcolor="#FF0000">
+<div align="center">
+<b>Details for Page "验证currentStatus表数据状态改变"</b>
+<table bordercolor="#000000" bgcolor="#2674A6" border="0" cellpadding="1" cellspacing="1" width="95%">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>开启第一轮加息 1-1</td><td align="center">1</td><td align="right">85</td><td align="right">3</td><td align="center">false</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a href="#%E9%AA%8C%E8%AF%81getList%E6%95%B0%E6%8D%AE%E7%8A%B6%E6%80%81%E6%94%B9%E5%8F%98">验证getList数据状态改变</a></td><td align="center">2</td><td align="center">2</td><td align="right">0.00%</td><td align="right">48 ms</td><td align="right">NaN</td><td align="right">NaN</td><td align="center"><a href="javascript:change('page_details_6')"><img src="expand.png" alt="expand/collapse" id="page_details_6_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_6">
+<td colspan="8" bgcolor="#FF0000">
+<div align="center">
+<b>Details for Page "验证getList数据状态改变"</b>
+<table bordercolor="#000000" bgcolor="#2674A6" border="0" cellpadding="1" cellspacing="1" width="95%">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>开启第一轮加息 1-1</td><td align="center">1</td><td align="right">55</td><td align="right">412</td><td align="center">false</td>
+</tr>
+<tr>
+<td>开启第二轮加息 2-1</td><td align="center">2</td><td align="right">41</td><td align="right">836</td><td align="center">false</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a href="#%E9%AA%8C%E8%AF%81payList%E8%A1%A8%E6%95%B0%E6%8D%AE">验证payList表数据</a></td><td align="center">3</td><td align="center">3</td><td align="right">0.00%</td><td align="right">65 ms</td><td align="right">NaN</td><td align="right">NaN</td><td align="center"><a href="javascript:change('page_details_7')"><img src="expand.png" alt="expand/collapse" id="page_details_7_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_7">
+<td colspan="8" bgcolor="#FF0000">
+<div align="center">
+<b>Details for Page "验证payList表数据"</b>
+<table bordercolor="#000000" bgcolor="#2674A6" border="0" cellpadding="1" cellspacing="1" width="95%">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>开启第一轮加息 1-1</td><td align="center">1</td><td align="right">47</td><td align="right">3</td><td align="center">false</td>
+</tr>
+<tr>
+<td>开启第二轮加息 2-1</td><td align="center">2</td><td align="right">76</td><td align="right">3</td><td align="center">false</td>
+</tr>
+<tr>
+<td>用户获得两笔活动加息,开启加息 7-1</td><td align="center">3</td><td align="right">72</td><td align="right">3</td><td align="center">false</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td>重置用户getList</td><td align="center">7</td><td align="center">0</td><td align="right">100.00%</td><td align="right">60 ms</td><td align="right">NaN</td><td align="right">NaN</td><td align="center"><a href="javascript:change('page_details_8')"><img src="expand.png" alt="expand/collapse" id="page_details_8_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_8">
+<td colspan="8" bgcolor="#FF0000">
+<div align="center">
+<b>Details for Page "重置用户getList"</b>
+<table bordercolor="#000000" bgcolor="#2674A6" border="0" cellpadding="1" cellspacing="1" width="95%">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>开启第一轮加息 1-1</td><td align="center">1</td><td align="right">54</td><td align="right">2845</td><td align="center">true</td>
+</tr>
+<tr>
+<td>开启第二轮加息 2-1</td><td align="center">2</td><td align="right">59</td><td align="right">2845</td><td align="center">true</td>
+</tr>
+<tr>
+<td>新版收益不足1分钱开启加息 3-1</td><td align="center">3</td><td align="right">79</td><td align="right">2845</td><td align="center">true</td>
+</tr>
+<tr>
+<td>老版收益不足1分钱开启加息 4-1</td><td align="center">4</td><td align="right">76</td><td align="right">2845</td><td align="center">true</td>
+</tr>
+<tr>
+<td>用户有正在进行的加息,开启加息 6-1</td><td align="center">5</td><td align="right">57</td><td align="right">2845</td><td align="center">true</td>
+</tr>
+<tr>
+<td>用户获得两笔活动加息,开启加息 7-1</td><td align="center">6</td><td align="right">44</td><td align="right">2845</td><td align="center">true</td>
+</tr>
+<tr>
+<td>用户有部分加息过期,开启加息 9-1</td><td align="center">7</td><td align="right">49</td><td align="right">2845</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td>重置用户payList</td><td align="center">7</td><td align="center">0</td><td align="right">100.00%</td><td align="right">58 ms</td><td align="right">NaN</td><td align="right">NaN</td><td align="center"><a href="javascript:change('page_details_9')"><img src="expand.png" alt="expand/collapse" id="page_details_9_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_9">
+<td colspan="8" bgcolor="#FF0000">
+<div align="center">
+<b>Details for Page "重置用户payList"</b>
+<table bordercolor="#000000" bgcolor="#2674A6" border="0" cellpadding="1" cellspacing="1" width="95%">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>开启第一轮加息 1-1</td><td align="center">1</td><td align="right">55</td><td align="right">2845</td><td align="center">true</td>
+</tr>
+<tr>
+<td>开启第二轮加息 2-1</td><td align="center">2</td><td align="right">74</td><td align="right">2845</td><td align="center">true</td>
+</tr>
+<tr>
+<td>新版收益不足1分钱开启加息 3-1</td><td align="center">3</td><td align="right">71</td><td align="right">2845</td><td align="center">true</td>
+</tr>
+<tr>
+<td>老版收益不足1分钱开启加息 4-1</td><td align="center">4</td><td align="right">59</td><td align="right">2845</td><td align="center">true</td>
+</tr>
+<tr>
+<td>用户有正在进行的加息,开启加息 6-1</td><td align="center">5</td><td align="right">49</td><td align="right">2845</td><td align="center">true</td>
+</tr>
+<tr>
+<td>用户获得两笔活动加息,开启加息 7-1</td><td align="center">6</td><td align="right">50</td><td align="right">2845</td><td align="center">true</td>
+</tr>
+<tr>
+<td>用户有部分加息过期,开启加息 9-1</td><td align="center">7</td><td align="right">48</td><td align="right">2845</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td>重置用户currentStatus</td><td align="center">7</td><td align="center">0</td><td align="right">100.00%</td><td align="right">52 ms</td><td align="right">NaN</td><td align="right">NaN</td><td align="center"><a href="javascript:change('page_details_10')"><img src="expand.png" alt="expand/collapse" id="page_details_10_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_10">
+<td colspan="8" bgcolor="#FF0000">
+<div align="center">
+<b>Details for Page "重置用户currentStatus"</b>
+<table bordercolor="#000000" bgcolor="#2674A6" border="0" cellpadding="1" cellspacing="1" width="95%">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>开启第一轮加息 1-1</td><td align="center">1</td><td align="right">47</td><td align="right">2845</td><td align="center">true</td>
+</tr>
+<tr>
+<td>开启第二轮加息 2-1</td><td align="center">2</td><td align="right">79</td><td align="right">2845</td><td align="center">true</td>
+</tr>
+<tr>
+<td>新版收益不足1分钱开启加息 3-1</td><td align="center">3</td><td align="right">45</td><td align="right">2845</td><td align="center">true</td>
+</tr>
+<tr>
+<td>老版收益不足1分钱开启加息 4-1</td><td align="center">4</td><td align="right">48</td><td align="right">2845</td><td align="center">true</td>
+</tr>
+<tr>
+<td>用户有正在进行的加息,开启加息 6-1</td><td align="center">5</td><td align="right">49</td><td align="right">2845</td><td align="center">true</td>
+</tr>
+<tr>
+<td>用户获得两笔活动加息,开启加息 7-1</td><td align="center">6</td><td align="right">50</td><td align="right">2845</td><td align="center">true</td>
+</tr>
+<tr>
+<td>用户有部分加息过期,开启加息 9-1</td><td align="center">7</td><td align="right">49</td><td align="right">2845</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td>重置用户historyIncomeList</td><td align="center">7</td><td align="center">0</td><td align="right">100.00%</td><td align="right">61 ms</td><td align="right">NaN</td><td align="right">NaN</td><td align="center"><a href="javascript:change('page_details_11')"><img src="expand.png" alt="expand/collapse" id="page_details_11_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_11">
+<td colspan="8" bgcolor="#FF0000">
+<div align="center">
+<b>Details for Page "重置用户historyIncomeList"</b>
+<table bordercolor="#000000" bgcolor="#2674A6" border="0" cellpadding="1" cellspacing="1" width="95%">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>开启第一轮加息 1-1</td><td align="center">1</td><td align="right">58</td><td align="right">2845</td><td align="center">true</td>
+</tr>
+<tr>
+<td>开启第二轮加息 2-1</td><td align="center">2</td><td align="right">57</td><td align="right">2845</td><td align="center">true</td>
+</tr>
+<tr>
+<td>新版收益不足1分钱开启加息 3-1</td><td align="center">3</td><td align="right">47</td><td align="right">2845</td><td align="center">true</td>
+</tr>
+<tr>
+<td>老版收益不足1分钱开启加息 4-1</td><td align="center">4</td><td align="right">111</td><td align="right">2845</td><td align="center">true</td>
+</tr>
+<tr>
+<td>用户有正在进行的加息,开启加息 6-1</td><td align="center">5</td><td align="right">61</td><td align="right">2845</td><td align="center">true</td>
+</tr>
+<tr>
+<td>用户获得两笔活动加息,开启加息 7-1</td><td align="center">6</td><td align="right">46</td><td align="right">2845</td><td align="center">true</td>
+</tr>
+<tr>
+<td>用户有部分加息过期,开启加息 9-1</td><td align="center">7</td><td align="right">45</td><td align="right">2845</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td>给用户发放0.2%加速率</td><td align="center">1</td><td align="center">0</td><td align="right">100.00%</td><td align="right">51 ms</td><td align="right">NaN</td><td align="right">NaN</td><td align="center"><a href="javascript:change('page_details_12')"><img src="expand.png" alt="expand/collapse" id="page_details_12_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_12">
+<td colspan="8" bgcolor="#FF0000">
+<div align="center">
+<b>Details for Page "给用户发放0.2%加速率"</b>
+<table bordercolor="#000000" bgcolor="#2674A6" border="0" cellpadding="1" cellspacing="1" width="95%">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>开启第二轮加息 2-1</td><td align="center">1</td><td align="right">51</td><td align="right">410</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td>给用户发放0.2%加息率</td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">65 ms</td><td align="right">NaN</td><td align="right">NaN</td><td align="center"><a href="javascript:change('page_details_13')"><img src="expand.png" alt="expand/collapse" id="page_details_13_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_13">
+<td colspan="8" bgcolor="#FF0000">
+<div align="center">
+<b>Details for Page "给用户发放0.2%加息率"</b>
+<table bordercolor="#000000" bgcolor="#2674A6" border="0" cellpadding="1" cellspacing="1" width="95%">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>开启第一轮加息 1-1</td><td align="center">1</td><td align="right">82</td><td align="right">410</td><td align="center">true</td>
+</tr>
+<tr>
+<td>开启第二轮加息 2-1</td><td align="center">2</td><td align="right">48</td><td align="right">410</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td>第一轮加息结束</td><td align="center">1</td><td align="center">0</td><td align="right">100.00%</td><td align="right">54 ms</td><td align="right">NaN</td><td align="right">NaN</td><td align="center"><a href="javascript:change('page_details_14')"><img src="expand.png" alt="expand/collapse" id="page_details_14_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_14">
+<td colspan="8" bgcolor="#FF0000">
+<div align="center">
+<b>Details for Page "第一轮加息结束"</b>
+<table bordercolor="#000000" bgcolor="#2674A6" border="0" cellpadding="1" cellspacing="1" width="95%">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>开启第二轮加息 2-1</td><td align="center">1</td><td align="right">54</td><td align="right">2845</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a href="#%E7%94%A8%E6%88%B7%E5%BC%80%E5%90%AF%E7%AC%AC%E4%BA%8C%E8%BD%AE%E5%8A%A0%E6%81%AF">用户开启第二轮加息</a></td><td align="center">1</td><td align="center">1</td><td align="right">0.00%</td><td align="right">45 ms</td><td align="right">NaN</td><td align="right">NaN</td><td align="center"><a href="javascript:change('page_details_15')"><img src="expand.png" alt="expand/collapse" id="page_details_15_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_15">
+<td colspan="8" bgcolor="#FF0000">
+<div align="center">
+<b>Details for Page "用户开启第二轮加息"</b>
+<table bordercolor="#000000" bgcolor="#2674A6" border="0" cellpadding="1" cellspacing="1" width="95%">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>开启第二轮加息 2-1</td><td align="center">1</td><td align="right">45</td><td align="right">295</td><td align="center">false</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a href="#%E9%AA%8C%E8%AF%81currentStatus%E7%8A%B6%E6%80%81%E6%94%B9%E5%8F%98">验证currentStatus状态改变</a></td><td align="center">1</td><td align="center">1</td><td align="right">0.00%</td><td align="right">92 ms</td><td align="right">NaN</td><td align="right">NaN</td><td align="center"><a href="javascript:change('page_details_16')"><img src="expand.png" alt="expand/collapse" id="page_details_16_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_16">
+<td colspan="8" bgcolor="#FF0000">
+<div align="center">
+<b>Details for Page "验证currentStatus状态改变"</b>
+<table bordercolor="#000000" bgcolor="#2674A6" border="0" cellpadding="1" cellspacing="1" width="95%">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>开启第二轮加息 2-1</td><td align="center">1</td><td align="right">92</td><td align="right">3</td><td align="center">false</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a href="#%E9%AA%8C%E8%AF%81historyIncomeList%E6%95%B0%E6%8D%AE">验证historyIncomeList数据</a></td><td align="center">1</td><td align="center">1</td><td align="right">0.00%</td><td align="right">52 ms</td><td align="right">NaN</td><td align="right">NaN</td><td align="center"><a href="javascript:change('page_details_17')"><img src="expand.png" alt="expand/collapse" id="page_details_17_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_17">
+<td colspan="8" bgcolor="#FF0000">
+<div align="center">
+<b>Details for Page "验证historyIncomeList数据"</b>
+<table bordercolor="#000000" bgcolor="#2674A6" border="0" cellpadding="1" cellspacing="1" width="95%">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>开启第二轮加息 2-1</td><td align="center">1</td><td align="right">52</td><td align="right">3</td><td align="center">false</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td>给用户发放0.01%加息率</td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">54 ms</td><td align="right">NaN</td><td align="right">NaN</td><td align="center"><a href="javascript:change('page_details_18')"><img src="expand.png" alt="expand/collapse" id="page_details_18_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_18">
+<td colspan="8" bgcolor="#FF0000">
+<div align="center">
+<b>Details for Page "给用户发放0.01%加息率"</b>
+<table bordercolor="#000000" bgcolor="#2674A6" border="0" cellpadding="1" cellspacing="1" width="95%">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>新版收益不足1分钱开启加息 3-1</td><td align="center">1</td><td align="right">61</td><td align="right">410</td><td align="center">true</td>
+</tr>
+<tr>
+<td>老版收益不足1分钱开启加息 4-1</td><td align="center">2</td><td align="right">46</td><td align="right">410</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a href="#%E9%AA%8C%E8%AF%81%E7%94%A8%E6%88%B7%E6%97%A0%E6%B3%95%E5%BC%80%E5%90%AF%E5%8A%A0%E6%81%AF">验证用户无法开启加息</a></td><td align="center">1</td><td align="center">1</td><td align="right">0.00%</td><td align="right">43 ms</td><td align="right">NaN</td><td align="right">NaN</td><td align="center"><a href="javascript:change('page_details_19')"><img src="expand.png" alt="expand/collapse" id="page_details_19_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_19">
+<td colspan="8" bgcolor="#FF0000">
+<div align="center">
+<b>Details for Page "验证用户无法开启加息"</b>
+<table bordercolor="#000000" bgcolor="#2674A6" border="0" cellpadding="1" cellspacing="1" width="95%">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>新版收益不足1分钱开启加息 3-1</td><td align="center">1</td><td align="right">43</td><td align="right">295</td><td align="center">false</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a href="#%E6%97%A0%E6%94%B6%E7%9B%8A%E6%97%A0%E6%B3%95%E5%8A%A0%E6%81%AF">无收益无法加息</a></td><td align="center">1</td><td align="center">1</td><td align="right">0.00%</td><td align="right">71 ms</td><td align="right">NaN</td><td align="right">NaN</td><td align="center"><a href="javascript:change('page_details_20')"><img src="expand.png" alt="expand/collapse" id="page_details_20_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_20">
+<td colspan="8" bgcolor="#FF0000">
+<div align="center">
+<b>Details for Page "无收益无法加息"</b>
+<table bordercolor="#000000" bgcolor="#2674A6" border="0" cellpadding="1" cellspacing="1" width="95%">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>用户无收益率,开启加息 5-1</td><td align="center">1</td><td align="right">71</td><td align="right">295</td><td align="center">false</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td>给用户发放0.20%加息率</td><td align="center">4</td><td align="center">0</td><td align="right">100.00%</td><td align="right">59 ms</td><td align="right">NaN</td><td align="right">NaN</td><td align="center"><a href="javascript:change('page_details_21')"><img src="expand.png" alt="expand/collapse" id="page_details_21_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_21">
+<td colspan="8" bgcolor="#FF0000">
+<div align="center">
+<b>Details for Page "给用户发放0.20%加息率"</b>
+<table bordercolor="#000000" bgcolor="#2674A6" border="0" cellpadding="1" cellspacing="1" width="95%">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>用户有正在进行的加息,开启加息 6-1</td><td align="center">1</td><td align="right">57</td><td align="right">410</td><td align="center">true</td>
+</tr>
+<tr>
+<td>用户有正在进行的加息,开启加息 6-1</td><td align="center">2</td><td align="right">83</td><td align="right">410</td><td align="center">true</td>
+</tr>
+<tr>
+<td>用户已过期加息,用户开启加息 8-1</td><td align="center">3</td><td align="right">51</td><td align="right">410</td><td align="center">true</td>
+</tr>
+<tr>
+<td>用户有部分加息过期,开启加息 9-1</td><td align="center">4</td><td align="right">45</td><td align="right">410</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a href="#%E7%94%A8%E6%88%B7%E5%86%8D%E6%AC%A1%E5%BC%80%E5%90%AF%E5%8A%A0%E6%81%AF">用户再次开启加息</a></td><td align="center">1</td><td align="center">1</td><td align="right">0.00%</td><td align="right">39 ms</td><td align="right">NaN</td><td align="right">NaN</td><td align="center"><a href="javascript:change('page_details_22')"><img src="expand.png" alt="expand/collapse" id="page_details_22_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_22">
+<td colspan="8" bgcolor="#FF0000">
+<div align="center">
+<b>Details for Page "用户再次开启加息"</b>
+<table bordercolor="#000000" bgcolor="#2674A6" border="0" cellpadding="1" cellspacing="1" width="95%">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>用户有正在进行的加息,开启加息 6-1</td><td align="center">1</td><td align="right">39</td><td align="right">295</td><td align="center">false</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td>给用户发放0.02%加息率</td><td align="center">1</td><td align="center">0</td><td align="right">100.00%</td><td align="right">93 ms</td><td align="right">NaN</td><td align="right">NaN</td><td align="center"><a href="javascript:change('page_details_23')"><img src="expand.png" alt="expand/collapse" id="page_details_23_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_23">
+<td colspan="8" bgcolor="#FF0000">
+<div align="center">
+<b>Details for Page "给用户发放0.02%加息率"</b>
+<table bordercolor="#000000" bgcolor="#2674A6" border="0" cellpadding="1" cellspacing="1" width="95%">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>用户获得两笔活动加息,开启加息 7-1</td><td align="center">1</td><td align="right">93</td><td align="right">410</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td>给用户发放0.04%加息率</td><td align="center">1</td><td align="center">0</td><td align="right">100.00%</td><td align="right">86 ms</td><td align="right">NaN</td><td align="right">NaN</td><td align="center"><a href="javascript:change('page_details_24')"><img src="expand.png" alt="expand/collapse" id="page_details_24_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_24">
+<td colspan="8" bgcolor="#FF0000">
+<div align="center">
+<b>Details for Page "给用户发放0.04%加息率"</b>
+<table bordercolor="#000000" bgcolor="#2674A6" border="0" cellpadding="1" cellspacing="1" width="95%">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>用户获得两笔活动加息,开启加息 7-1</td><td align="center">1</td><td align="right">86</td><td align="right">410</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td>使加息率过期</td><td align="center">1</td><td align="center">0</td><td align="right">100.00%</td><td align="right">47 ms</td><td align="right">NaN</td><td align="right">NaN</td><td align="center"><a href="javascript:change('page_details_25')"><img src="expand.png" alt="expand/collapse" id="page_details_25_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_25">
+<td colspan="8" bgcolor="#FF0000">
+<div align="center">
+<b>Details for Page "使加息率过期"</b>
+<table bordercolor="#000000" bgcolor="#2674A6" border="0" cellpadding="1" cellspacing="1" width="95%">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>用户已过期加息,用户开启加息 8-1</td><td align="center">1</td><td align="right">47</td><td align="right">2845</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td>重置用户发放信息</td><td align="center">1</td><td align="center">0</td><td align="right">100.00%</td><td align="right">46 ms</td><td align="right">NaN</td><td align="right">NaN</td><td align="center"><a href="javascript:change('page_details_26')"><img src="expand.png" alt="expand/collapse" id="page_details_26_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_26">
+<td colspan="8" bgcolor="#FF0000">
+<div align="center">
+<b>Details for Page "重置用户发放信息"</b>
+<table bordercolor="#000000" bgcolor="#2674A6" border="0" cellpadding="1" cellspacing="1" width="95%">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>用户已过期加息,用户开启加息 8-1</td><td align="center">1</td><td align="right">46</td><td align="right">2845</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td>给用户发放0.40%加息率</td><td align="center">1</td><td align="center">0</td><td align="right">100.00%</td><td align="right">53 ms</td><td align="right">NaN</td><td align="right">NaN</td><td align="center"><a href="javascript:change('page_details_27')"><img src="expand.png" alt="expand/collapse" id="page_details_27_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_27">
+<td colspan="8" bgcolor="#FF0000">
+<div align="center">
+<b>Details for Page "给用户发放0.40%加息率"</b>
+<table bordercolor="#000000" bgcolor="#2674A6" border="0" cellpadding="1" cellspacing="1" width="95%">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>用户有部分加息过期,开启加息 9-1</td><td align="center">1</td><td align="right">53</td><td align="right">410</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td>使0.20%的加息率过期</td><td align="center">1</td><td align="center">0</td><td align="right">100.00%</td><td align="right">48 ms</td><td align="right">NaN</td><td align="right">NaN</td><td align="center"><a href="javascript:change('page_details_28')"><img src="expand.png" alt="expand/collapse" id="page_details_28_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_28">
+<td colspan="8" bgcolor="#FF0000">
+<div align="center">
+<b>Details for Page "使0.20%的加息率过期"</b>
+<table bordercolor="#000000" bgcolor="#2674A6" border="0" cellpadding="1" cellspacing="1" width="95%">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>用户有部分加息过期,开启加息 9-1</td><td align="center">1</td><td align="right">48</td><td align="right">2845</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+<hr size="1" width="95%" align="center">
+<h2>Failure Detail</h2>
+<h3>用户正常开启加息<a name="%E7%94%A8%E6%88%B7%E6%AD%A3%E5%B8%B8%E5%BC%80%E5%90%AF%E5%8A%A0%E6%81%AF"></a>
+</h3>
+<table align="center" class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th>Response</th><th>Failure Message</th>
+</tr>
+<tr>
+<td>200 - OK</td><td>Test failed: text expected to contain /开启成功/</td>
+</tr>
+<tr>
+<td>200 - OK</td><td>Test failed: text expected to contain /开启成功/</td>
+</tr>
+<tr>
+<td>200 - OK</td><td>Test failed: text expected to contain /开启成功/</td>
+</tr>
+<tr>
+<td>200 - OK</td><td>Test failed: text expected to contain /开启成功/</td>
+</tr>
+<tr>
+<td>200 - OK</td><td>Test failed: text expected to contain /加速收益率不满足开启要求/</td>
+</tr>
+<tr>
+<td>200 - OK</td><td>Test failed: text expected to contain /"currentCycleUsedAmount":40/</td>
+</tr>
+</table>
+<h3>验证currentStatus表数据状态改变<a name="%E9%AA%8C%E8%AF%81currentStatus%E8%A1%A8%E6%95%B0%E6%8D%AE%E7%8A%B6%E6%80%81%E6%94%B9%E5%8F%98"></a>
+</h3>
+<table align="center" class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th>Response</th><th>Failure Message</th>
+</tr>
+<tr>
+<td>200 - OK</td><td>Test failed: text expected to contain /"usedAmount" : 20 , "jiaXiRate" : 0.002 , "state" : "0"/</td>
+</tr>
+</table>
+<h3>验证getList数据状态改变<a name="%E9%AA%8C%E8%AF%81getList%E6%95%B0%E6%8D%AE%E7%8A%B6%E6%80%81%E6%94%B9%E5%8F%98"></a>
+</h3>
+<table align="center" class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th>Response</th><th>Failure Message</th>
+</tr>
+<tr>
+<td>200 - OK</td><td>Test failed: text expected to contain /"jiaXiCoinStatus" : "-1" , "totalAmount" : 20 , "validAmount" : 0 , "usedAmount" : 20/</td>
+</tr>
+<tr>
+<td>200 - OK</td><td>Test failed: text expected to contain /"jiaXiCoinStatus" : "-1" , "totalAmount" : 20 , "validAmount" : 0 , "usedAmount" : 20 /</td>
+</tr>
+</table>
+<h3>验证payList表数据<a name="%E9%AA%8C%E8%AF%81payList%E8%A1%A8%E6%95%B0%E6%8D%AE"></a>
+</h3>
+<table align="center" class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th>Response</th><th>Failure Message</th>
+</tr>
+<tr>
+<td>200 - OK</td><td>Test failed: text expected to contain /"activityId" : "20" , "partUsedAmount" : 20/</td>
+</tr>
+<tr>
+<td>200 - OK</td><td>Test failed: text expected to contain /"activityId" : "20" , "partUsedAmount" : 20/</td>
+</tr>
+<tr>
+<td>200 - OK</td><td>Test failed: text expected to contain /"pin" : "iniesday" , "usedAmount" : 60 , "totalRate" : 0.006/</td>
+</tr>
+</table>
+<h3>用户开启第二轮加息<a name="%E7%94%A8%E6%88%B7%E5%BC%80%E5%90%AF%E7%AC%AC%E4%BA%8C%E8%BD%AE%E5%8A%A0%E6%81%AF"></a>
+</h3>
+<table align="center" class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th>Response</th><th>Failure Message</th>
+</tr>
+<tr>
+<td>200 - OK</td><td>Test failed: text expected to contain /开启成功/</td>
+</tr>
+</table>
+<h3>验证currentStatus状态改变<a name="%E9%AA%8C%E8%AF%81currentStatus%E7%8A%B6%E6%80%81%E6%94%B9%E5%8F%98"></a>
+</h3>
+<table align="center" class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th>Response</th><th>Failure Message</th>
+</tr>
+<tr>
+<td>200 - OK</td><td>Test failed: text expected to contain /"usedAmount" : 40 , "jiaXiRate" : 0.004 , "state" : "0"/</td>
+</tr>
+</table>
+<h3>验证historyIncomeList数据<a name="%E9%AA%8C%E8%AF%81historyIncomeList%E6%95%B0%E6%8D%AE"></a>
+</h3>
+<table align="center" class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th>Response</th><th>Failure Message</th>
+</tr>
+<tr>
+<td>200 - OK</td><td>Test failed: text expected to contain / "jiaXiRate" : 0.002 , "jiaXiAmount" : 0.0 , "order" : 1 /</td>
+</tr>
+</table>
+<h3>验证用户无法开启加息<a name="%E9%AA%8C%E8%AF%81%E7%94%A8%E6%88%B7%E6%97%A0%E6%B3%95%E5%BC%80%E5%90%AF%E5%8A%A0%E6%81%AF"></a>
+</h3>
+<table align="center" class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th>Response</th><th>Failure Message</th>
+</tr>
+<tr>
+<td>200 - OK</td><td>Test failed: text expected to contain /"data":{"content":"收益不足0.01元，开启会浪费你的收益率。建议购买理财产品立即提升本金至36500元，本金越多，收益越高哦！","class":"com.jd.jrmserver.jiaxi.api.domain.Popup","content2":"","buttons":[{"class":"com.jd.jrmserver.jiaxi.api.domain.DiyButton","jumpData":{"class":"com.jd.jrmserver.jiaxi.api.domain.JumpData","jumpType":6,"jumpUrl":"132"},"name":"去提升本金"},{"class":"com.jd.jrmserver.jiaxi.api.domain.DiyButton","name":"仍要开启"},{"class":"com.jd.jrmserver.jiaxi.api.domain.DiyButton","name":"关闭"}],"title":"您的本金太少"},"class":"com.jd.jrmserver.jiaxi.api.domain.BaseResultData","code":"0002","success":false,"msg":"加速收益率不满足开启要求"}}/</td>
+</tr>
+</table>
+<h3>无收益无法加息<a name="%E6%97%A0%E6%94%B6%E7%9B%8A%E6%97%A0%E6%B3%95%E5%8A%A0%E6%81%AF"></a>
+</h3>
+<table align="center" class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th>Response</th><th>Failure Message</th>
+</tr>
+<tr>
+<td>200 - OK</td><td>Test failed: text expected to contain /加速收益率不满足开启要求/</td>
+</tr>
+</table>
+<h3>用户再次开启加息<a name="%E7%94%A8%E6%88%B7%E5%86%8D%E6%AC%A1%E5%BC%80%E5%90%AF%E5%8A%A0%E6%81%AF"></a>
+</h3>
+<table align="center" class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th>Response</th><th>Failure Message</th>
+</tr>
+<tr>
+<td>200 - OK</td><td>Test failed: text expected to contain /当前有尚未到期的加息进程/</td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="82" it="0" lt="80" ct="0" ts="1490347865149" s="true" lb="给用户发放0.2%加息率" rc="200" rm="OK" tn="开启第一轮加息 1-1" dt="text" by="410" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<sample t="72" it="0" lt="0" ct="0" ts="1490347865768" s="true" lb="验证getList表增加数据" rc="200" rm="OK" tn="开启第一轮加息 1-1" dt="text" by="412" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</sample>
+<httpSample t="28" it="0" lt="28" ct="0" ts="1490347865841" s="false" lb="用户正常开启加息" rc="200" rm="OK" tn="开启第一轮加息 1-1" dt="text" by="295" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: text expected to contain /开启成功/</failureMessage>
+  </assertionResult>
+</httpSample>
+<sample t="2" it="0" lt="0" ct="0" ts="1490347870873" s="true" lb="Test Pause" rc="500" rm="com.mongodb.MongoException$Network: Read operation to server /172.23.181.138:80 failed on database pre_jiaxi" tn="开启第一轮加息 1-1" dt="text" by="72" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</sample>
+<sample t="85" it="0" lt="0" ct="0" ts="1490347870876" s="false" lb="验证currentStatus表数据状态改变" rc="200" rm="OK" tn="开启第一轮加息 1-1" dt="text" by="3" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: text expected to contain /&quot;usedAmount&quot; : 20 , &quot;jiaXiRate&quot; : 0.002 , &quot;state&quot; : &quot;0&quot;/</failureMessage>
+  </assertionResult>
+</sample>
+<sample t="55" it="0" lt="0" ct="0" ts="1490347871465" s="false" lb="验证getList数据状态改变" rc="200" rm="OK" tn="开启第一轮加息 1-1" dt="text" by="412" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: text expected to contain /&quot;jiaXiCoinStatus&quot; : &quot;-1&quot; , &quot;totalAmount&quot; : 20 , &quot;validAmount&quot; : 0 , &quot;usedAmount&quot; : 20/</failureMessage>
+  </assertionResult>
+</sample>
+<sample t="47" it="0" lt="0" ct="0" ts="1490347871521" s="false" lb="验证payList表数据" rc="200" rm="OK" tn="开启第一轮加息 1-1" dt="text" by="3" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: text expected to contain /&quot;activityId&quot; : &quot;20&quot; , &quot;partUsedAmount&quot; : 20/</failureMessage>
+  </assertionResult>
+</sample>
+<sample t="54" it="0" lt="0" ct="0" ts="1490347871569" s="true" lb="重置用户getList" rc="200" rm="OK" tn="开启第一轮加息 1-1" dt="text" by="2845" sby="0" ng="1" na="1"/>
+<sample t="55" it="0" lt="0" ct="0" ts="1490347871623" s="true" lb="重置用户payList" rc="200" rm="OK" tn="开启第一轮加息 1-1" dt="text" by="2845" sby="0" ng="1" na="1"/>
+<sample t="47" it="0" lt="0" ct="0" ts="1490347871679" s="true" lb="重置用户currentStatus" rc="200" rm="OK" tn="开启第一轮加息 1-1" dt="text" by="2845" sby="0" ng="1" na="1"/>
+<sample t="58" it="0" lt="0" ct="0" ts="1490347871726" s="true" lb="重置用户historyIncomeList" rc="200" rm="OK" tn="开启第一轮加息 1-1" dt="text" by="2845" sby="0" ng="1" na="1"/>
+<httpSample t="51" it="0" lt="51" ct="0" ts="1490347871791" s="true" lb="给用户发放0.2%加速率" rc="200" rm="OK" tn="开启第二轮加息 2-1" dt="text" by="410" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="45" it="0" lt="45" ct="0" ts="1490347872348" s="true" lb="用户正常开启加息" rc="200" rm="OK" tn="开启第二轮加息 2-1" dt="text" by="295" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="48" it="0" lt="48" ct="0" ts="1490347872394" s="true" lb="给用户发放0.2%加息率" rc="200" rm="OK" tn="开启第二轮加息 2-1" dt="text" by="410" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<sample t="54" it="0" lt="0" ct="0" ts="1490347873448" s="true" lb="第一轮加息结束" rc="200" rm="OK" tn="开启第二轮加息 2-1" dt="text" by="2845" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</sample>
+<httpSample t="45" it="0" lt="45" ct="0" ts="1490347874008" s="false" lb="用户开启第二轮加息" rc="200" rm="OK" tn="开启第二轮加息 2-1" dt="text" by="295" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: text expected to contain /开启成功/</failureMessage>
+  </assertionResult>
+</httpSample>
+<sample t="3" it="0" lt="0" ct="0" ts="1490347879056" s="true" lb="Test Pause" rc="500" rm="com.mongodb.MongoException$Network: Read operation to server /172.23.181.138:80 failed on database pre_jiaxi" tn="开启第二轮加息 2-1" dt="text" by="72" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</sample>
+<sample t="92" it="0" lt="0" ct="0" ts="1490347879060" s="false" lb="验证currentStatus状态改变" rc="200" rm="OK" tn="开启第二轮加息 2-1" dt="text" by="3" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: text expected to contain /&quot;usedAmount&quot; : 40 , &quot;jiaXiRate&quot; : 0.004 , &quot;state&quot; : &quot;0&quot;/</failureMessage>
+  </assertionResult>
+</sample>
+<sample t="41" it="0" lt="0" ct="0" ts="1490347879656" s="false" lb="验证getList数据状态改变" rc="200" rm="OK" tn="开启第二轮加息 2-1" dt="text" by="836" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: text expected to contain /&quot;jiaXiCoinStatus&quot; : &quot;-1&quot; , &quot;totalAmount&quot; : 20 , &quot;validAmount&quot; : 0 , &quot;usedAmount&quot; : 20 /</failureMessage>
+  </assertionResult>
+</sample>
+<sample t="76" it="0" lt="0" ct="0" ts="1490347879698" s="false" lb="验证payList表数据" rc="200" rm="OK" tn="开启第二轮加息 2-1" dt="text" by="3" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: text expected to contain /&quot;activityId&quot; : &quot;20&quot; , &quot;partUsedAmount&quot; : 20/</failureMessage>
+  </assertionResult>
+</sample>
+<sample t="52" it="0" lt="0" ct="0" ts="1490347879775" s="false" lb="验证historyIncomeList数据" rc="200" rm="OK" tn="开启第二轮加息 2-1" dt="text" by="3" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: text expected to contain / &quot;jiaXiRate&quot; : 0.002 , &quot;jiaXiAmount&quot; : 0.0 , &quot;order&quot; : 1 /</failureMessage>
+  </assertionResult>
+</sample>
+<sample t="59" it="0" lt="0" ct="0" ts="1490347879829" s="true" lb="重置用户getList" rc="200" rm="OK" tn="开启第二轮加息 2-1" dt="text" by="2845" sby="0" ng="1" na="1"/>
+<sample t="74" it="0" lt="0" ct="0" ts="1490347879889" s="true" lb="重置用户payList" rc="200" rm="OK" tn="开启第二轮加息 2-1" dt="text" by="2845" sby="0" ng="1" na="1"/>
+<sample t="79" it="0" lt="0" ct="0" ts="1490347879964" s="true" lb="重置用户currentStatus" rc="200" rm="OK" tn="开启第二轮加息 2-1" dt="text" by="2845" sby="0" ng="1" na="1"/>
+<sample t="57" it="0" lt="0" ct="0" ts="1490347880044" s="true" lb="重置用户historyIncomeList" rc="200" rm="OK" tn="开启第二轮加息 2-1" dt="text" by="2845" sby="0" ng="1" na="1"/>
+<httpSample t="61" it="0" lt="61" ct="0" ts="1490347880104" s="true" lb="给用户发放0.01%加息率" rc="200" rm="OK" tn="新版收益不足1分钱开启加息 3-1" dt="text" by="410" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="43" it="0" lt="43" ct="0" ts="1490347880667" s="false" lb="验证用户无法开启加息" rc="200" rm="OK" tn="新版收益不足1分钱开启加息 3-1" dt="text" by="295" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: text expected to contain /&quot;data&quot;:{&quot;content&quot;:&quot;收益不足0.01元，开启会浪费你的收益率。建议购买理财产品立即提升本金至36500元，本金越多，收益越高哦！&quot;,&quot;class&quot;:&quot;com.jd.jrmserver.jiaxi.api.domain.Popup&quot;,&quot;content2&quot;:&quot;&quot;,&quot;buttons&quot;:[{&quot;class&quot;:&quot;com.jd.jrmserver.jiaxi.api.domain.DiyButton&quot;,&quot;jumpData&quot;:{&quot;class&quot;:&quot;com.jd.jrmserver.jiaxi.api.domain.JumpData&quot;,&quot;jumpType&quot;:6,&quot;jumpUrl&quot;:&quot;132&quot;},&quot;name&quot;:&quot;去提升本金&quot;},{&quot;class&quot;:&quot;com.jd.jrmserver.jiaxi.api.domain.DiyButton&quot;,&quot;name&quot;:&quot;仍要开启&quot;},{&quot;class&quot;:&quot;com.jd.jrmserver.jiaxi.api.domain.DiyButton&quot;,&quot;name&quot;:&quot;关闭&quot;}],&quot;title&quot;:&quot;您的本金太少&quot;},&quot;class&quot;:&quot;com.jd.jrmserver.jiaxi.api.domain.BaseResultData&quot;,&quot;code&quot;:&quot;0002&quot;,&quot;success&quot;:false,&quot;msg&quot;:&quot;加速收益率不满足开启要求&quot;}}/</failureMessage>
+  </assertionResult>
+</httpSample>
+<sample t="79" it="0" lt="0" ct="0" ts="1490347880711" s="true" lb="重置用户getList" rc="200" rm="OK" tn="新版收益不足1分钱开启加息 3-1" dt="text" by="2845" sby="0" ng="1" na="1"/>
+<sample t="71" it="0" lt="0" ct="0" ts="1490347880790" s="true" lb="重置用户payList" rc="200" rm="OK" tn="新版收益不足1分钱开启加息 3-1" dt="text" by="2845" sby="0" ng="1" na="1"/>
+<sample t="45" it="0" lt="0" ct="0" ts="1490347880862" s="true" lb="重置用户currentStatus" rc="200" rm="OK" tn="新版收益不足1分钱开启加息 3-1" dt="text" by="2845" sby="0" ng="1" na="1"/>
+<sample t="47" it="0" lt="0" ct="0" ts="1490347880907" s="true" lb="重置用户historyIncomeList" rc="200" rm="OK" tn="新版收益不足1分钱开启加息 3-1" dt="text" by="2845" sby="0" ng="1" na="1"/>
+<httpSample t="46" it="0" lt="46" ct="0" ts="1490347880956" s="true" lb="给用户发放0.01%加息率" rc="200" rm="OK" tn="老版收益不足1分钱开启加息 4-1" dt="text" by="410" sby="0" ng="1" na="1"/>
+<httpSample t="51" it="0" lt="51" ct="0" ts="1490347881003" s="false" lb="用户正常开启加息" rc="200" rm="OK" tn="老版收益不足1分钱开启加息 4-1" dt="text" by="295" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: text expected to contain /开启成功/</failureMessage>
+  </assertionResult>
+</httpSample>
+<sample t="1" it="0" lt="0" ct="0" ts="1490347888059" s="true" lb="Test Pause" rc="500" rm="com.mongodb.MongoException$Network: Read operation to server /172.23.181.138:80 failed on database pre_jiaxi" tn="老版收益不足1分钱开启加息 4-1" dt="text" by="72" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</sample>
+<sample t="76" it="0" lt="0" ct="0" ts="1490347888061" s="true" lb="重置用户getList" rc="200" rm="OK" tn="老版收益不足1分钱开启加息 4-1" dt="text" by="2845" sby="0" ng="1" na="1"/>
+<sample t="59" it="0" lt="0" ct="0" ts="1490347888138" s="true" lb="重置用户payList" rc="200" rm="OK" tn="老版收益不足1分钱开启加息 4-1" dt="text" by="2845" sby="0" ng="1" na="1"/>
+<sample t="48" it="0" lt="0" ct="0" ts="1490347888198" s="true" lb="重置用户currentStatus" rc="200" rm="OK" tn="老版收益不足1分钱开启加息 4-1" dt="text" by="2845" sby="0" ng="1" na="1"/>
+<sample t="111" it="0" lt="0" ct="0" ts="1490347888246" s="true" lb="重置用户historyIncomeList" rc="200" rm="OK" tn="老版收益不足1分钱开启加息 4-1" dt="text" by="2845" sby="0" ng="1" na="1"/>
+<httpSample t="71" it="0" lt="71" ct="0" ts="1490347888359" s="false" lb="无收益无法加息" rc="200" rm="OK" tn="用户无收益率,开启加息 5-1" dt="text" by="295" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: text expected to contain /加速收益率不满足开启要求/</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="57" it="0" lt="57" ct="0" ts="1490347888433" s="true" lb="给用户发放0.20%加息率" rc="200" rm="OK" tn="用户有正在进行的加息,开启加息 6-1" dt="text" by="410" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="61" it="0" lt="61" ct="0" ts="1490347888491" s="false" lb="用户正常开启加息" rc="200" rm="OK" tn="用户有正在进行的加息,开启加息 6-1" dt="text" by="295" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: text expected to contain /开启成功/</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="83" it="0" lt="83" ct="0" ts="1490347888553" s="true" lb="给用户发放0.20%加息率" rc="200" rm="OK" tn="用户有正在进行的加息,开启加息 6-1" dt="text" by="410" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="39" it="0" lt="39" ct="0" ts="1490347888939" s="false" lb="用户再次开启加息" rc="200" rm="OK" tn="用户有正在进行的加息,开启加息 6-1" dt="text" by="295" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: text expected to contain /当前有尚未到期的加息进程/</failureMessage>
+  </assertionResult>
+</httpSample>
+<sample t="64" it="0" lt="0" ct="0" ts="1490347888979" s="true" lb="Test Pause" rc="200" rm="OK" tn="用户有正在进行的加息,开启加息 6-1" dt="text" by="3" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</sample>
+<sample t="57" it="0" lt="0" ct="0" ts="1490347889044" s="true" lb="重置用户getList" rc="200" rm="OK" tn="用户有正在进行的加息,开启加息 6-1" dt="text" by="2845" sby="0" ng="1" na="1"/>
+<sample t="49" it="0" lt="0" ct="0" ts="1490347889102" s="true" lb="重置用户payList" rc="200" rm="OK" tn="用户有正在进行的加息,开启加息 6-1" dt="text" by="2845" sby="0" ng="1" na="1"/>
+<sample t="49" it="0" lt="0" ct="0" ts="1490347889152" s="true" lb="重置用户currentStatus" rc="200" rm="OK" tn="用户有正在进行的加息,开启加息 6-1" dt="text" by="2845" sby="0" ng="1" na="1"/>
+<sample t="61" it="0" lt="0" ct="0" ts="1490347889201" s="true" lb="重置用户historyIncomeList" rc="200" rm="OK" tn="用户有正在进行的加息,开启加息 6-1" dt="text" by="2845" sby="0" ng="1" na="1"/>
+<httpSample t="93" it="0" lt="93" ct="0" ts="1490347896271" s="true" lb="给用户发放0.02%加息率" rc="200" rm="OK" tn="用户获得两笔活动加息,开启加息 7-1" dt="text" by="410" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="86" it="0" lt="86" ct="0" ts="1490347896365" s="true" lb="给用户发放0.04%加息率" rc="200" rm="OK" tn="用户获得两笔活动加息,开启加息 7-1" dt="text" by="410" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="58" it="0" lt="58" ct="0" ts="1490347896452" s="false" lb="用户正常开启加息" rc="200" rm="OK" tn="用户获得两笔活动加息,开启加息 7-1" dt="text" by="295" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: text expected to contain /开启成功/</failureMessage>
+  </assertionResult>
+</httpSample>
+<sample t="1" it="0" lt="0" ct="0" ts="1490347901512" s="true" lb="Test Pause" rc="500" rm="com.mongodb.MongoException$Network: Read operation to server /172.23.181.138:80 failed on database pre_jiaxi" tn="用户获得两笔活动加息,开启加息 7-1" dt="text" by="72" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</sample>
+<sample t="72" it="0" lt="0" ct="0" ts="1490347901514" s="false" lb="验证payList表数据" rc="200" rm="OK" tn="用户获得两笔活动加息,开启加息 7-1" dt="text" by="3" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: text expected to contain /&quot;pin&quot; : &quot;iniesday&quot; , &quot;usedAmount&quot; : 60 , &quot;totalRate&quot; : 0.006/</failureMessage>
+  </assertionResult>
+</sample>
+<sample t="44" it="0" lt="0" ct="0" ts="1490347901587" s="true" lb="重置用户getList" rc="200" rm="OK" tn="用户获得两笔活动加息,开启加息 7-1" dt="text" by="2845" sby="0" ng="1" na="1"/>
+<sample t="50" it="0" lt="0" ct="0" ts="1490347901631" s="true" lb="重置用户payList" rc="200" rm="OK" tn="用户获得两笔活动加息,开启加息 7-1" dt="text" by="2845" sby="0" ng="1" na="1"/>
+<sample t="50" it="0" lt="0" ct="0" ts="1490347901681" s="true" lb="重置用户currentStatus" rc="200" rm="OK" tn="用户获得两笔活动加息,开启加息 7-1" dt="text" by="2845" sby="0" ng="1" na="1"/>
+<sample t="46" it="0" lt="0" ct="0" ts="1490347901732" s="true" lb="重置用户historyIncomeList" rc="200" rm="OK" tn="用户获得两笔活动加息,开启加息 7-1" dt="text" by="2845" sby="0" ng="1" na="1"/>
+<httpSample t="51" it="0" lt="51" ct="0" ts="1490347901782" s="true" lb="给用户发放0.20%加息率" rc="200" rm="OK" tn="用户已过期加息,用户开启加息 8-1" dt="text" by="410" sby="0" ng="1" na="1"/>
+<sample t="47" it="0" lt="0" ct="0" ts="1490347902334" s="true" lb="使加息率过期" rc="200" rm="OK" tn="用户已过期加息,用户开启加息 8-1" dt="text" by="2845" sby="0" ng="1" na="1"/>
+<httpSample t="30" it="0" lt="30" ct="0" ts="1490347902382" s="false" lb="用户正常开启加息" rc="200" rm="OK" tn="用户已过期加息,用户开启加息 8-1" dt="text" by="295" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: text expected to contain /加速收益率不满足开启要求/</failureMessage>
+  </assertionResult>
+</httpSample>
+<sample t="46" it="0" lt="0" ct="0" ts="1490347902413" s="true" lb="重置用户发放信息" rc="200" rm="OK" tn="用户已过期加息,用户开启加息 8-1" dt="text" by="2845" sby="0" ng="1" na="1"/>
+<httpSample t="45" it="0" lt="45" ct="0" ts="1490347902462" s="true" lb="给用户发放0.20%加息率" rc="200" rm="OK" tn="用户有部分加息过期,开启加息 9-1" dt="text" by="410" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="53" it="0" lt="53" ct="0" ts="1490347902508" s="true" lb="给用户发放0.40%加息率" rc="200" rm="OK" tn="用户有部分加息过期,开启加息 9-1" dt="text" by="410" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<sample t="48" it="0" lt="0" ct="0" ts="1490347903063" s="true" lb="使0.20%的加息率过期" rc="200" rm="OK" tn="用户有部分加息过期,开启加息 9-1" dt="text" by="2845" sby="0" ng="1" na="1"/>
+<httpSample t="22" it="0" lt="21" ct="0" ts="1490347903112" s="false" lb="用户正常开启加息" rc="200" rm="OK" tn="用户有部分加息过期,开启加息 9-1" dt="text" by="295" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: text expected to contain /&quot;currentCycleUsedAmount&quot;:40/</failureMessage>
+  </assertionResult>
+</httpSample>
+<sample t="49" it="0" lt="0" ct="0" ts="1490347903134" s="true" lb="重置用户getList" rc="200" rm="OK" tn="用户有部分加息过期,开启加息 9-1" dt="text" by="2845" sby="0" ng="1" na="1"/>
+<sample t="48" it="0" lt="0" ct="0" ts="1490347903183" s="true" lb="重置用户payList" rc="200" rm="OK" tn="用户有部分加息过期,开启加息 9-1" dt="text" by="2845" sby="0" ng="1" na="1"/>
+<sample t="49" it="0" lt="0" ct="0" ts="1490347903232" s="true" lb="重置用户currentStatus" rc="200" rm="OK" tn="用户有部分加息过期,开启加息 9-1" dt="text" by="2845" sby="0" ng="1" na="1"/>
+<sample t="45" it="0" lt="0" ct="0" ts="1490347903281" s="true" lb="重置用户historyIncomeList" rc="200" rm="OK" tn="用户有部分加息过期,开启加息 9-1" dt="text" by="2845" sby="0" ng="1" na="1"/>
+
+</testResults>
