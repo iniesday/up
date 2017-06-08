@@ -6,9 +6,9 @@
     <!-- 需要改成自己本地的 Jmeter 目录-->
     <property name="jmeter.home" value="/Users/zhoujunfeng/Documents/apache-jmeter-3.2" />
     <!-- jmeter生成jtl格式的结果报告的路径-->
-    <property name="jmeter.result.jtl.dir" value="/Users/zhoujunfeng/Documents/UP_git/jtl" />
+    <property name="jmeter.result.jtl.dir" value="/Users/zhoujunfeng/.jenkins/jobs/UP/htmlreports/HTML_Report/jtl" />
     <!-- jmeter生成html格式的结果报告的路径-->
-    <property name="jmeter.result.html.dir" value="/Users/zhoujunfeng/Documents/UP_git/html" />
+    <property name="jmeter.result.html.dir" value="/Users/zhoujunfeng/.jenkins/jobs/UP/htmlreports/HTML_Report/html" />
     <!-- 生成的报告的前缀 -->
     <property name="ReportName" value="HTML Report" />
     <property name="jmeter.result.jtlName" value="${jmeter.result.jtl.dir}/${ReportName}${time}.jtl" />
