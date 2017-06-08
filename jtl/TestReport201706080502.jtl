@@ -1,0 +1,2 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,Latency,IdleTime,Connect
+1496912543313,1899,给用户发放0.2%加息率,200,OK,开启第一轮加息 1-1,text,false,Test failed: text expected to contain /加息币发放成功/,357,0,1,1,1897,0,0
