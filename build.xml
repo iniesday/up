@@ -1,26 +1,21 @@
 <?xml version="1.0" encoding="UTF8"?>
-<project name="myTest" default="all">
-    <tstamp>
-        <format property="time" pattern="yyyyMMddhhmm" />
-    </tstamp>
+<project name="myTest" default="run">
     <!-- 需要改成自己本地的 Jmeter 目录-->
     <property name="jmeter.home" value="/Users/zhoujunfeng/Documents/apache-jmeter-3.2" />
     <!-- jmeter生成jtl格式的结果报告的路径-->
-    <property name="jmeter.result.jtl.dir" value="/Users/zhoujunfeng/.jenkins/jobs/UP/htmlreports/HTML_Report" />
+    <property name="jmeter.result.jtl.dir" value="/Users/zhoujunfeng/Documents/UP_git/jtl" />
     <!-- jmeter生成html格式的结果报告的路径-->
-    <property name="jmeter.result.html.dir" value="/Users/zhoujunfeng/.jenkins/jobs/UP/htmlreports/HTML_Report" />
+    <property name="jmeter.result.html.dir" value="/Users/zhoujunfeng/Documents/UP_git/html" />
     <!-- 生成的报告的前缀 -->
     <property name="ReportName" value="HTML Report" />
-    <property name="jmeter.result.jtlName" value="${jmeter.result.jtl.dir}/${ReportName}${time}.jtl" />
-    <property name="jmeter.result.htmlName" value="${jmeter.result.html.dir}/${ReportName}${time}.html" />
-    <!-- 接收测试报告的邮箱 -->
-    <property name="mail_to" value="f1zjf@163.com" />
-    <!-- 电脑地址 -->
-    <property name="ComputerName" value="127.0.0.1" />
-    <target name="all">
+    <property name="jmeter.result.jtlName" value="${jmeter.result.jtl.dir}/report.jtl" />
+    <property name="jmeter.result.htmlName" value="${jmeter.result.html.dir}/index.html" />
+
+     <target name="run">
         <antcall target="test" />
         <antcall target="report" />
     </target>
+
     <target name="test">
         <taskdef name="jmeter" classname="org.programmerplanet.ant.taskdefs.jmeter.JMeterTask" />
         <jmeter jmeterhome="${jmeter.home}" resultlog="${jmeter.result.jtlName}">
@@ -40,5 +35,4 @@
             </fileset>
         </copy>
     </target>
-    <!-- 发送邮件 -->
 </project>
