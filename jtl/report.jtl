@@ -85,4 +85,19 @@
   </assertionResult>
 </httpSample>
 
+<httpSample t="532" it="0" lt="531" ct="488" ts="1498729935741" s="true" lb="活动页" rc="200" rm="OK" tn="白条加油站11期 1-1" dt="text" by="21275" sby="189" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="59" it="0" lt="59" ct="25" ts="1498729936295" s="true" lb="初始化接口" rc="200" rm="OK" tn="白条加油站11期 1-1" dt="text" by="821" sby="226" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+
 </testResults>
