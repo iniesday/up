@@ -8,4 +8,36 @@
   </assertionResult>
 </httpSample>
 
+<httpSample t="555" it="0" lt="554" ct="519" ts="1497253215569" s="true" lb="访问百度" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="2980" sby="149" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+
+<httpSample t="502" it="0" lt="501" ct="466" ts="1497253432691" s="true" lb="访问百度" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="2980" sby="149" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+
+<httpSample t="521" it="0" lt="518" ct="479" ts="1497253469112" s="true" lb="访问百度" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="2980" sby="149" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+
+<httpSample t="1036" it="0" lt="1035" ct="583" ts="1498725757232" s="true" lb="访问百度" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="2980" sby="149" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+
 </testResults>
