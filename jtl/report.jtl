@@ -100,4 +100,34 @@
   </assertionResult>
 </httpSample>
 
+<httpSample t="672" it="0" lt="671" ct="626" ts="1498738576175" s="true" lb="活动页" rc="200" rm="OK" tn="白条加油站11期 1-1" dt="text" by="21277" sby="189" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="376" it="0" lt="375" ct="336" ts="1498738576877" s="true" lb="初始化接口" rc="200" rm="OK" tn="白条加油站11期 1-1" dt="text" by="828" sby="226" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+
+<httpSample t="555" it="0" lt="552" ct="507" ts="1498739541762" s="true" lb="活动页" rc="200" rm="OK" tn="白条加油站11期 1-1" dt="text" by="21278" sby="189" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="98" it="0" lt="98" ct="47" ts="1498739542342" s="true" lb="初始化接口" rc="200" rm="OK" tn="白条加油站11期 1-1" dt="text" by="821" sby="226" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+
 </testResults>
